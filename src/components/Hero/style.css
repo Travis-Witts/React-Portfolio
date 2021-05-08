@@ -114,3 +114,21 @@
     color: #ff3a3a;
     text-decoration: none;
   }
+
+  .social-icons {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+  }
+
+  .social-icons a i {
+    padding:5px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .social-icons a i:hover {
+    padding:5px;
+    color: #ff3a3a;
+    text-decoration: none;
+  }
