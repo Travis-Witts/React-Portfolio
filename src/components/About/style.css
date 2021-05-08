@@ -1,0 +1,23 @@
+#about {
+    background: rgb(223, 223, 223);
+    padding: 100px;
+  }
+  
+  .about-divider {
+    margin-bottom: 60px;
+  }
+  
+  #about .about-title {
+    color: #333;
+    font-weight: 700;
+    font-size: 28px;
+  }
+  
+  #about .about-text {
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  
+  #about .about-text:last-child {
+    margin-bottom: 50px;
+  }
