@@ -1,9 +1,10 @@
 import "./App.css";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
-import BackToTop from "./components/BackToTop"
-import Main from "./components/Main"
-import Footer from "./components/Footer"
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import BackToTop from "react-back-to-top-button";
+import TopButton from "./components/TopArrow";
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <div>
     <Hero/>
     <NavBar />
-    <BackToTop />
+    <BackToTop children={<TopButton />} />
     <Main />
     <Footer />
     </div>

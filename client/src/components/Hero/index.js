@@ -12,13 +12,13 @@ function Hero() {
             <div className="hero-logo"></div>
             <h2 className="social-icons">
                 <a href="https://github.com/Travis-Witts">
-                  <i class="fab fa-github-square"></i>
+                  <i className="fab fa-github-square"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/travis-witts/">
-                  <i class="fab fa-linkedin"></i>
+                  <i className="fab fa-linkedin"></i>
                 </a>
                 <a href="#contact">
-                  <i class="fas fa-envelope-square"></i>
+                  <i className="fas fa-envelope-square"></i>
                 </a>
               </h2>
             <h1>Travis Witts</h1>
