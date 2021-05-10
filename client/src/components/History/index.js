@@ -60,22 +60,6 @@ function History() {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(46, 46, 46)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(46, 46, 46)" }}
-          date="2020 - 2021"
-          iconStyle={{ background: "rgb(46, 46, 46)", color: "#fff" }}
-          icon={<AdelaideIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Full Stack Development Certificate
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            University of Adelaide
-          </h4>
-          <p></p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(46, 46, 46)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(46, 46, 46)" }}
           date="2012-2014"
           iconStyle={{ background: "rgb(46, 46, 46)", color: "#fff" }}
         >
