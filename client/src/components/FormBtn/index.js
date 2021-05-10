@@ -1,6 +1,8 @@
+import "./style.css"
+
 function FormBtn(props) {
     return (
-        <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success">
+        <button {...props} className="email-btn btn btn-warning">
             {props.children}
         </button>
     );

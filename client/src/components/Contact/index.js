@@ -76,6 +76,11 @@ function Contact() {
                 <i className="fas fa-envelope-open-text"></i>
                 <p>Travis.Witts@outlook.com</p>
               </div>
+
+              <div>
+                <i className="fas fa-phone"></i>
+                <p>+61 431 528 153</p>
+              </div>
             </div>
           </div>
         </div>
