@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 
 router.post("/", async (req, res) => {
     console.log(req.body);
-    if (req.body.text.length() < 200) {
+    if (req.body.text.length() < 200 && req.body.from < 200 && req.body.subject < 200) {
         var transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {

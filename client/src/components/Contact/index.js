@@ -75,7 +75,7 @@ function Contact() {
               </FormBtn>
             </form>
           </div>
-          <div className="col-lg-3 col-md-4">
+          <div style={} className="col-lg-3 col-md-4">
             <div className="info">
               <div>
                 <i className="fas fa-globe"></i>
@@ -86,7 +86,6 @@ function Contact() {
                 <i className="fas fa-envelope-open-text"></i>
                 <a href="mailto:travis.witts@outlook.com"><p>Travis.Witts@outlook.com</p></a>
               </div>
-
               <div>
                 <i className="fas fa-phone"></i>
                 <a href="tel:+61431528153"><p>+61 431 528 153</p></a>
