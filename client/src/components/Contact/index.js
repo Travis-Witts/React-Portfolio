@@ -18,7 +18,6 @@ function Contact() {
     console.log(formObject);
     API.newEmail({
       from: formObject.email,
-      to: "travis.witts@outlook.com",
       subject: `${formObject.name} <${formObject.email}>`,
       text: formObject.query,
     })
