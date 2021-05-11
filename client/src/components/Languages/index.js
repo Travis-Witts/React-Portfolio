@@ -8,14 +8,15 @@ function Languages() {
           <div className="row">
             <div className="col-md-12">
               <h3 className="languages-main-title">Languages</h3>
-              <div className="section-title-divider"></div>
-              <p className="languages-main-desc section-description">
+              <h3 className="languages-main-title">& Libraries</h3>
+              <div className="mt-2 section-title-divider"></div>
+              <p className="mt-3 mb-5 languages-main-desc section-description">
                 A wide assortment of Languages and Library knowledge at my disposal
               </p>
             </div>
           </div>
 
-          <div className="row">
+          <div className="row mt-5 mb-5">
             <div className="col-lg-4 col-md-6 languages-item">
               <div className="languages-icon"><i className="fab fa-js-square"></i></div>
               <h4 className="languages-title">Javascript</h4>
@@ -55,13 +56,39 @@ function Languages() {
                 This alongside node package manager (npm) is used for installing and running dependencies for most JS applications.
               </p>
             </div>
+
+            <div className="col-lg-4 col-md-6 languages-item">
+              <div className="languages-icon"><i className="fas fa-code"></i></div>
+              <h4 className="languages-title">JQuery</h4>
+              <p className="languages-description">
+                A javascript library for Javascript, used mostly in legacy systems today.
+              </p>
+            </div>
+            <div className="col-lg-4 col-md-6 languages-item">
+              <div className="languages-icon">
+                <i className="fas fa-bed"></i>
+              </div>
+              <h4 className="languages-title">Rest APIs</h4>
+              <p className="languages-description">
+                The industry standard for APIs, uses JSON as a format for the information sent to and from the server. 
+              </p>
+            </div>
+            <div className="col-lg-4 col-md-6 languages-item">
+              <div className="languages-icon">
+                <i className="fab fa-git-square"></i>
+              </div>
+              <h4 className="languages-title">Git</h4>
+              <p className="languages-description">
+                Software used for tracking changes and working as a team with Git Bash terminal and storing repos on Github.
+              </p>
+            </div>
             <div className="col-lg-4 col-md-6 languages-item">
               <div className="languages-icon">
                 <i className="fas fa-database"></i>
               </div>
-              <h4 className="languages-title">MySQL and NoSQL</h4>
+              <h4 className="languages-title">SQL & NoSQL Databases</h4>
               <p className="languages-description">
-                Both are database types, however MySQL is more common in relational database modelling which does not scale aswell as NoSQL databases such as MongoDB.
+                A Structured Query Language database (SQL), consists of a relational model with tables and keys to relate records. NoSQL databases such as MongoDB hold information in a JSON format and are identified by 2 keys, a Partition key and a Sort key with no tables.
               </p>
             </div>
           </div>
