@@ -75,7 +75,7 @@ function Contact() {
               </FormBtn>
             </form>
           </div>
-          <div style={} className="col-lg-3 col-md-4">
+          <div className="col-lg-3 col-md-4">
             <div className="info">
               <div>
                 <i className="fas fa-globe"></i>
