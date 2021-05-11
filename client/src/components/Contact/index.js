@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./style.css";
 import API from "../../utils/API";
 import Input from "../Input";
@@ -22,7 +22,9 @@ function Contact() {
       subject: `${formObject.name} <${formObject.email}>`,
       text: formObject.query
     })
-      .then(res => { setFormObject({ email: '', name: '', query: '' }) })
+      .then(res => {
+        setFormObject({ email: '', name: '', query: '', sent: true });
+     })
       .catch(err => console.log(err));
   };
 
@@ -57,6 +59,7 @@ function Contact() {
                 name="query"
                 placeholder="What would you like to contact me regarding?"
               />
+              {formObject.sent && <p>SENT <i class="fas fa-check-circle"></i></p> }
               <FormBtn
                 disabled={!(formObject.name && formObject.email)}
                 onClick={handleFormSubmit}
