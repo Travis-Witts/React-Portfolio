@@ -2,8 +2,7 @@ const router = require("express").Router();
 const nodemailer = require("nodemailer");
 
 router.post("/", async (req, res) => {
-    console.log(req.body);
-    if (req.body.text.length() < 200 && req.body.from < 200 && req.body.subject < 200) {
+    if (req.body.text.length() < 200 && req.body.from.length() < 200 && req.body.subject.length() < 200) {
         var transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
@@ -12,7 +11,6 @@ router.post("/", async (req, res) => {
             }
         });
     
-        console.log('created');
         transporter.sendMail({
             from: req.body.from,
             to: 'travis.witts@outlook.com',
