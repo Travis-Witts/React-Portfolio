@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./style.css";
 import API from "../../utils/API";
 import Input from "../Input";
@@ -10,23 +10,23 @@ function Contact() {
 
   function handleInputChange(event) {
     const { name, value } = event.target;
-    setFormObject({ ...formObject, [name]: value })
-  };
+    setFormObject({ ...formObject, [name]: value });
+  }
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    console.log(formObject)
+    console.log(formObject);
     API.newEmail({
       from: formObject.email,
       to: "travis.witts@outlook.com",
       subject: `${formObject.name} <${formObject.email}>`,
-      text: formObject.query
+      text: formObject.query,
     })
-      .then(res => {
-        setFormObject({ email: '', name: '', query: '', sent: true });
-     })
-      .catch(err => console.log(err));
-  };
+      .then((res) => {
+        setFormObject({ email: "", name: "", query: "", sent: true });
+      })
+      .catch((err) => console.log(err));
+  }
 
   return (
     <section id="contact">
@@ -44,22 +44,29 @@ function Contact() {
         <div className="row justify-content-center">
           <div className="col-lg-5 col-md-8">
             <form>
-              <Input
-                onChange={handleInputChange}
-                name="name"
-                placeholder="name (required)"
-              />
-              <Input
-                onChange={handleInputChange}
-                name="email"
-                placeholder="email (required)"
-              />
-              <TextArea
-                onChange={handleInputChange}
-                name="query"
-                placeholder="What would you like to contact me regarding?"
-              />
-              {formObject.sent && <p>SENT <i class="fas fa-check-circle"></i></p> }
+              {formObject.sent ? (
+                <p>
+                  SENT <i class="fas fa-check-circle"></i>
+                </p>
+              ) : (
+                <div>
+                  <Input
+                    onChange={handleInputChange}
+                    name="name"
+                    placeholder="name (required)"
+                  />
+                  <Input
+                    onChange={handleInputChange}
+                    name="email"
+                    placeholder="email (required)"
+                  />
+                  <TextArea
+                    onChange={handleInputChange}
+                    name="query"
+                    placeholder="What would you like to contact me regarding?"
+                  />
+                </div>
+              )}
               <FormBtn
                 disabled={!(formObject.name && formObject.email)}
                 onClick={handleFormSubmit}

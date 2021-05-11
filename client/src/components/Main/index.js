@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 import About from "../About";
 import Languages from "../Languages";
 import Projects from "../Projects";
