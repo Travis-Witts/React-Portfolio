@@ -84,12 +84,12 @@ function Contact() {
 
               <div>
                 <i className="fas fa-envelope-open-text"></i>
-                <p>Travis.Witts@outlook.com</p>
+                <a href="mailto:travis.witts@outlook.com"><p>Travis.Witts@outlook.com</p></a>
               </div>
 
               <div>
                 <i className="fas fa-phone"></i>
-                <p>+61 431 528 153</p>
+                <a href="tel:+61431528153"><p>+61 431 528 153</p></a>
               </div>
             </div>
           </div>
