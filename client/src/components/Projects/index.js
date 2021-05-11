@@ -88,8 +88,7 @@ function Projects() {
               </a>
             </div>
           </div>
-        </div>
-        <div className="row project-container">
+
           <div className="position-relative col-lg-4 col-md-6 project-item">
             <img src={Users} className="w-100 img-fluid" alt="" />
             <div className="position-absolute project-info">
