@@ -1,10 +1,13 @@
 const router = require("express").Router();
 const nodemailer = require("nodemailer");
 
+
 router.post("/", async (req, res) => {
     if (req.body.text.length < 200 && req.body.from.length < 200 && req.body.subject.length < 200) {
         var transporter = nodemailer.createTransport({
-            service: 'Gmail',
+            host: 'smtp.gmail.com',
+            port: 465,
+            secure: true,
             auth: {
                 user: process.env.EM_USER,
                 pass: process.env.EM_PASS
