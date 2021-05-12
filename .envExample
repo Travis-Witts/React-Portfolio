@@ -1,2 +1,4 @@
 EM_USER=email
-EM_PASS=password
+ID=client ID
+SECRET=client SECRET
+REFRESH=refresh token
