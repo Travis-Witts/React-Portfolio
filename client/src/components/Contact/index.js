@@ -41,12 +41,13 @@ function Contact() {
         </div>
 
         <div className="row justify-content-center">
+          <div className="col-lg-3 col-md-0"></div>
           <div className="col-lg-5 col-md-8">
             <form>
               {formObject.sent ? (
-                <p>
+                <h2 className="sent">
                   SENT <i class="fas fa-check-circle"></i>
-                </p>
+                </h2>
               ) : (
                 <div>
                   <Input
@@ -64,14 +65,16 @@ function Contact() {
                     name="query"
                     placeholder="What would you like to contact me regarding?"
                   />
+                  <div className="send-button">
+                  <FormBtn
+                    disabled={!(formObject.name && formObject.email)}
+                    onClick={handleFormSubmit}
+                  >
+                    Send Email
+                  </FormBtn>
+                  </div>
                 </div>
               )}
-              <FormBtn
-                disabled={!(formObject.name && formObject.email)}
-                onClick={handleFormSubmit}
-              >
-                Send Email
-              </FormBtn>
             </form>
           </div>
           <div className="col-lg-3 col-md-4">
@@ -83,11 +86,15 @@ function Contact() {
 
               <div>
                 <i className="fas fa-envelope-open-text"></i>
-                <a href="mailto:travis.witts@outlook.com"><p>Travis.Witts@outlook.com</p></a>
+                <a href="mailto:travis.witts@outlook.com">
+                  <p>Travis.Witts@outlook.com</p>
+                </a>
               </div>
               <div>
                 <i className="fas fa-phone"></i>
-                <a href="tel:+61431528153"><p>+61 431 528 153</p></a>
+                <a href="tel:+61431528153">
+                  <p>+61 431 528 153</p>
+                </a>
               </div>
             </div>
           </div>
