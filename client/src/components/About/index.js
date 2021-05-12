@@ -20,7 +20,7 @@ function About() {
 
               </p>
               <p className="about-text">
-                Recently earned a certificate of Full Stack Development at the University of Adelaide and currently undergoing a bachelor’s of Software Engineering at the University of South Australia. Constant learning has allowed for a thorough understanding of technologies such as NodeJS, ReactJS, JS, Python, C++, MongoDB and MySQL.
+                Recently earned a certificate of Full Stack Development at the University of Adelaide and currently undergoing a bachelor’s of Software Engineering at the University of South Australia. Constant learning has allowed for a thorough understanding of technologies such as NodeJS, ReactJS, JS, Python, C#, MongoDB and MySQL.
               </p>
               <p className="about-text">
                 Along with a strong sense of empathy and charisma gained through the past 7 years of working in the Retail, Aviation and Hospitality industries.
