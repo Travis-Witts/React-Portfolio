@@ -4,6 +4,7 @@ import API from "../../utils/API";
 import Input from "../Input";
 import TextArea from "../TextArea";
 import FormBtn from "../FormBtn";
+import Resume from '../assets/resume/resume.pdf';
 
 function Contact() {
   const [formObject, setFormObject] = useState({});
@@ -94,6 +95,12 @@ function Contact() {
                 <i className="fas fa-phone"></i>
                 <a href="tel:+61431528153">
                   <p>+61 431 528 153</p>
+                </a>
+              </div>
+              <div>
+                <i className="fas fa-paperclip"></i>
+                <a href={Resume}>
+                  <p>Download My Resume</p>
                 </a>
               </div>
             </div>
