@@ -30,7 +30,7 @@ function Projects() {
             <Project deploy="https://anypos.herokuapp.com/" github="https://github.com/Travis-Witts/AnyPOS" name="AnyPOS" desc="Sell your products on the go!" img={Anypos}/>
           </div>
           <div className="py-3 col-lg-4 col-md-6 ">
-            <Project deploy="https://fierce-sands-72890.herokuapp.com/" github="https://github.com/Travis-Witts/tech-blog" name="Tech Blog" desc="Share what's on your mind!" img={Blog}/>
+            <Project deploy="https://handlebars-tech-blog.herokuapp.com/" github="https://github.com/Travis-Witts/tech-blog" name="Tech Blog" desc="Share what's on your mind!" img={Blog}/>
           </div>
           <div className="py-3 col-lg-4 col-md-6 ">
             <Project deploy="https://travis-witts.github.io/User-Directory/" github="https://github.com/Travis-Witts/User-Directory" name="User Directory" desc="A simple react app to sort users or employees." img={Users}/>
