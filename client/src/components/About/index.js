@@ -3,7 +3,7 @@ import "./style.css"
 
 function About() {
     return (
-        <section id="about">
+        <section className="px-4" id="about">
         <div className="container wow fadeInUp">
           <div className="row">
             <div className="col-md-12">

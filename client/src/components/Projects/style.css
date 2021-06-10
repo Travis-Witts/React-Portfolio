@@ -3,14 +3,9 @@
     padding: 80px 0;
   }
   
-  #project .project-item {
-    margin-bottom: 30px;
-  }
   
   #project .project-item .project-info {
     opacity: 0;
-    left: 12px;
-    right: 12px;
     bottom: 0;
     z-index: 3;
     transition: all ease-in-out 0.3s;
